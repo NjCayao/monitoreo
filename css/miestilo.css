@@ -1,0 +1,247 @@
+
+
+.password-container {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.p-miestilo{
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+input#username, input#password{
+    font-size: 18px;    
+    border-radius: 8px !important;
+}
+
+#submit{
+    font-size: 18px;    
+    border-radius: 8px !important;
+    margin-top: 10px;
+
+}
+
+.line2 {
+    height: 14px; 
+    width: 100%; 
+    background-color: #00a4ff; 
+    text-align: center; 
+    line-height: 10px; 
+    color: white; 
+    margin-bottom: 10px;
+}
+
+.line2 h4 {
+    margin: 0; 
+    font-size: 14px;
+}
+
+.line1 {
+    height: 14px; 
+    width: 100%; 
+    background-color: #ffa200; 
+    text-align: center; 
+    line-height: 10px; 
+    color: white; 
+    margin-bottom: 10px;
+}
+
+.line1 h4 {
+    margin: 0; 
+    font-size: 14px;
+}
+
+.line3 {
+    height: 14px; 
+    width: 100%; 
+    background-color: #056301; 
+    text-align: center; 
+    line-height: 10px; 
+    color: white; 
+    margin-bottom: 10px;
+}
+
+.line3 h4 {
+    margin: 0; 
+    font-size: 14px;
+}
+
+.login1{
+    color: #fff !important;
+    /* font-weight: bold; */
+    text-shadow: 2px 2px 2px black;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* boton activa y desactivado */
+
+.boton-activo {
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    width: 80.02px;
+    height: 32.66px;
+    border: none;
+    background-color: #00b41e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  
+  .boton-activo:hover{
+    /* font-weight: bold; */
+    color: rgb(7, 0, 0);
+    border-radius: 2rem;
+    width: 80.02px;
+    height: 32.66px;
+    border: none;
+    background-color: #2ec447;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boton-desactivo {
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    width: 80.02px;
+    height: 32.66px;
+    border: none;
+    background-color: #ca0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .boton-desactivo:hover{
+    /* font-weight: bold; */
+    color: rgb(7, 0, 0);
+    border-radius: 2rem;
+    width: 80.02px;
+    height: 32.66px;
+    border: none;
+    background-color: #e94747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*  checkbox */
+.check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .check {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+  
+  /* Crear una casilla de verificación personalizada */
+  .checkmark {
+    position: relative;
+    /* content: "X"; */
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    border: 4px solid #e43030;
+    border-radius: 5px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    
+    
+  }
+  
+  .check input:hover ~ .checkmark {
+    border: 2px solid #0974f1;
+  }
+  
+  /* Cuando la casilla de verificación está marcada */
+  .check input:checked ~ .checkmark {
+    box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+    border: 2px solid #0974f1;
+  }
+
+
+  /*Cree la marca de verificación/indicador (oculto cuando no está marcado) */
+  .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+  
+  /* Mostrar la marca de verificación cuando esté marcado */
+  .check input:checked ~ .checkmark:after {
+    display: block;
+    
+  }
+  
+  /* Aplicar estilo a la marca de verificación/indicador */
+  .check .checkmark:after {
+    left: 0.45em;
+    top: 0.15em;
+    width: 0.3em;
+    height: 0.7em;
+    border: solid rgb(0, 139, 0);
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(50deg);
+  }
+
+.nota {
+  position: relative;
+  bottom: 5px;
+  left: 18%;
+}
+
+.combus {
+  text-align: center;
+  max-width: 200px !important;
+}
+
+.fase {
+  text-align: center;
+  background-color: #bacce3;
+  height: 80px;
+}
+
+.fase2 {
+  text-align: center;
+  background-color: #f5f5f5;
+  height: 80px;
+}
+
+.descrip, .descrip2 {
+  text-align: center;
+  max-width: 200px !important;
+  height: 80px;
+}
+
+.descrip {
+  background-color: #bacce3;
+}
+
+.descrip2 {
+  background-color: #f5f5f5;
+}
+  
